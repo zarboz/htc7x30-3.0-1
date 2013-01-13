@@ -1160,3 +1160,4 @@ static void __exit rt2800usb_exit(void)
 
 module_init(rt2800usb_init);
 module_exit(rt2800usb_exit);
+

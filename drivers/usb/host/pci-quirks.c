@@ -968,3 +968,4 @@ static void __devinit quirk_usb_early_handoff(struct pci_dev *pdev)
 	pci_disable_device(pdev);
 }
 DECLARE_PCI_FIXUP_FINAL(PCI_ANY_ID, PCI_ANY_ID, quirk_usb_early_handoff);
+
