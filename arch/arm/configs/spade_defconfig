@@ -1,6 +1,6 @@
 #
 # Automatically generated make config: don't edit
-# Linux/arm 3.0.60 Kernel Configuration
+# Linux/arm 3.0.61 Kernel Configuration
 #
 CONFIG_ARM=y
 CONFIG_SYS_SUPPORTS_APM_EMULATION=y
@@ -173,7 +173,7 @@ CONFIG_IOSCHED_DEADLINE=y
 CONFIG_IOSCHED_CFQ=y
 CONFIG_CFQ_GROUP_IOSCHED=y
 CONFIG_IOSCHED_BFQ=y
-CONFIG_CGROUP_BFQIO=y
+# CONFIG_CGROUP_BFQIO is not set
 CONFIG_IOSCHED_SIO=y
 # CONFIG_DEFAULT_DEADLINE is not set
 # CONFIG_DEFAULT_CFQ is not set
