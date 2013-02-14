@@ -8,9 +8,10 @@ rm kernel-pack/system/lib/modules/bcmdhd.ko
 rm kernel-pack/kernel/zImage
 # Copy new modules and new zImage.
 cp drivers/net/wireless/bcmdhd/bcmdhd.ko ~/android/kernel-pack2/system/lib/modules
+cp drivers/net/kineto_gan.ko ~/android/kernel-pack2/system/lib/modules
 cp arch/arm/boot/zImage ~/android/kernel-pack2/kernel
 # Creat a zip package.
 cd kernel-pack
 zip -r advanced-sense-kernel-$VERSION.zip *
 # Drop it to release folder
-mv kernel-pack/advanced-sense-kernel-$VERSION.zip ~/android/releasefolder
+mv advanced-sense-kernel-$VERSION.zip ~/android/releasefolder
