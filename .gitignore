@@ -82,3 +82,6 @@ GTAGS
 # other
 .config
 .config.old
+bcmdhd.ko
+kineto_gan.ko
+zImage
