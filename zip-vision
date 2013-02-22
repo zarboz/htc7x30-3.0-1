@@ -12,6 +12,7 @@ cp drivers/net/kineto_gan.ko kernel-pack/system/lib/modules
 cp arch/arm/boot/zImage kernel-pack/kernel
 # Creat a zip package.
 cd kernel-pack
-zip -r advanced-sense-kernel-$VERSION.zip *
-# Drop it to release folder
-mv advanced-sense-kernel-$VERSION.zip ~/android/releasefolder
+zip -r ask-vision-$VERSION.zip *
+# Drop it to releasing folder
+mv ask-vision-$VERSION.zip .../fixme/please
+# FIXME: correct the location of 'releasing folder'.

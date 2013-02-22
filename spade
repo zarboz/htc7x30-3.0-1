@@ -1,2 +1,0 @@
-#!/bin/bash
-cp .config arch/arm/configs/spade_defconfig
