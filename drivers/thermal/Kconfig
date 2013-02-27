@@ -15,13 +15,12 @@ menuconfig THERMAL
 
 config THERMAL_HWMON
 	bool "Hardware monitoring support"
-	depends on THERMAL
-	depends on HWMON=y || HWMON=THERMAL
 	help
 	  The generic thermal sysfs driver's hardware monitoring support
 	  requires a 2.10.7/3.0.2 or later lm-sensors userspace.
 
 	  Say Y if your user-space is new enough.
+	 
 
 config THERMAL_PM8901
 	tristate "Qualcomm PM8901 Temperature Alarm"
@@ -91,3 +90,12 @@ config THERMAL_PM8XXX
 	  Enabling the thermal zone device via the mode file results in
 	  shifting over temperature shutdown control of the PMIC from hardware
 	  to software.
+	  
+config THERMAL_MONITOR
+	bool "Monitor thermal state and limit CPU Frequency"
+	default n
+	help
+	  This enables thermal monitoring capability in the kernel in the
+	  absence of a system wide thermal monitoring entity or until such an
+	  entity starts running in the userspace. Monitors TSENS temperature
+	  and limits the max frequency of the cores.
